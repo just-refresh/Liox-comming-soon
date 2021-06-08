@@ -64,7 +64,7 @@ p {
   cursor: pointer;
   position: relative;
   z-index: 0;
-  background: #4272d7;
+  background: #00C3FF;
   transition: all .2s ease-out, color .2s ease-out;
   font-weight: 300;
 }
