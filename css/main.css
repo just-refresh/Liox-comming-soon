@@ -1,102 +1,320 @@
+/* background: repeating-conic-gradient(from 236.73deg at 50% 50%, #000 17%, #000066 51%), repeating-conic-gradient(from 239.39deg at 50% 50%, #00c8ff 0%, #000000 100%);
+background-blend-mode: luminosity, normal; */
 body, html {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background: conic-gradient(from 240deg at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.69) 100%), repeating-conic-gradient(from 360deg at 50% 50%, #000000 50%, #090909 83.3%); background-blend-mode: normal, normal;
   overflow: hidden;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.screenshot {
-  width: 1200px;
-  margin: 8% auto
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+
+  color: white;
 }
 
-.screenshot img {
-  width: 100%;
+h1 {
+  line-height: 1.6rem;
 }
+
+
 
 p {
   color: white;
   font-family: 'Ubuntu', sans-serif;
-  text-align: center;
-  margin-top: -4px;
-}
-
-.inner-form {
-  display: flex;
-  max-width: 560px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.inner-form .input-field {
-  height: 56px;
-}
-
-.inner-form .first-wrap {
-  flex-grow: 1;
-}
-
-.inner-form .first-wrap input {
-  height: 100%;
-  width: 100%;
-  background: #fff;
-  border: 0;
-  border-radius: 4px 0 0 4px;
-  display: block;
-  padding: 0px 16px;
   font-size: 16px;
-  color: #333;
 }
 
-.lx_News form .inner-form .input-field.second-wrap {
-  width: 164px;
+.blue-text {
+  color: #00c3ff;
 }
 
-.lx_News form .inner-form .input-field.second-wrap .btn {
-  height: 100%;
-  width: 100%;
-  white-space: nowrap;
-  font-size: 20px;
-  color: #fff;
-  border: 0;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
+.bold-text {
+  font-weight: bold;
+}
+
+.screenshot {
   position: relative;
-  z-index: 0;
-  background: #00C3FF;
-  transition: all .2s ease-out, color .2s ease-out;
-  font-weight: 300;
+  width: 100%;
+  margin: -30% -51%;
+}
+.screenshot2 {
+  position: relative;
+  width: 0%;
+  margin: 0% 50%;
 }
 
-.lx_News form .inner-form .input-field.second-wrap .btn-search:hover {
-  background: #2d62d3;
+.row {
+  right: 110vh;
+  width: 1180px;
+  top: -800px;
+  right: 0vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  transform: rotateX(55deg) rotateY(-1deg) rotateZ(-45deg);
+}
+.column {
+  width:50%;
+  max-width: 50%;
+  padding:20px;
+  flex: 1 1 50%;
 }
 
-.lx_News form .inner-form .input-field.second-wrap .btn-search:focus {
-  outline: 0;
-  box-shadow: none;
+.row,
+.column,
+.ItemCard,
+.ItemCard__dest,
+.ItemCard__thumb {
+    position: relative;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
+
+.cover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ItemCard__thumb img {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translate3d(0, 0, 20px);
+}
+
+.column:hover .ItemCard__dest {
+    z-index: 10;
+}
+.column:hover .ItemCard__dest,
+.column:hover .ItemCard__thumb img {
+    transform: translate3d(0, 0, 50px) rotateX(-5deg);
+    transform-origin: center bottom;
+}
+.column:hover .ItemCard__thumb .shadow {
+    opacity: .6;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shadow {
+    display: block;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: .9;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px #00c3ff, 0 0 25px #00c3ff, 0 0 50px #00c3ff, 0 0 100px #00c3ff;
+    /* box-shadow:
+      inset 0 0 50px #fff,
+      inset 20px 0 80px #00c3ff,
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px #00c3ff,
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px #00c3ff,
+      10px 0 80px #0ff; */
+}
+
+.privacy {
+  display: flex;
+  justify-content: center;
+}
+
+/* Anfang Login Box  ****************************************************** */
+.login-box {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 450px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  /* box-shadow: 0 0 5px #00c3ff, 0 0 25px #00c3ff, 0 0 50px #00c3ff, 0 0 100px #00c3ff; */
+  box-shadow: #00c3ff85 0px -45px 155px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #00c3ff  ;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  padding: 15px 20px;
+  color: #00c3ff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 4px;
+  margin-bottom: 5%;
+}
+
+.login-box a:hover {
+  background: #00c3ff;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00c3ff,
+              0 0 25px #00c3ff,
+              0 0 50px #00c3ff,
+              0 0 100px #00c3ff;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00c3ff);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+/* Ende  ****************************************************** */
 
 
 .ag-format-container {
-  width: 500px;
   height: 500px;
+  width: auto;
   margin: 0 auto;
-  position: static;
+  position: relative;
 }
 
 .ag-glitch_item {
   background-color: transparent;
   background-blend-mode: normal;
-  background: url("/img/Liox_Logo_white_commingSoon.png") no-repeat center;
   background-size: contain;
-
   position: absolute;
-  top: 20%;
-  left: 40%;
-  right: 40%;
-  bottom: 40%;
+  background: url("/img/Liox_Logo_white.png") no-repeat center;
+  /* background: url("/img/Liox_Logo_white_commingSoon.png") no-repeat center; */
+  position: absolute;
+  background-size: contain;
+  top: 110%;
+  left: 85%;
+  right: 5%;
+  bottom: -135%;
 
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -567,43 +785,76 @@ p {
 
 
 
-@media only screen and (max-width: 767px) {
+
+@media screen and (min-width: 1885px) {
+  .row {
+    right: 0vh;
+  }
   .ag-format-container {
     width: 96%;
+    height: 500px;
   }
   .ag-glitch_item {
-    background-color: transparent;
-    background-blend-mode: normal;
-    background: url("/Logo/Liox_Logo_white.png") no-repeat center;
     background-size: contain;
-
     position: absolute;
-    top: 20%;
+    top: -200%;
+    left: 3%;
+    right: 90%;
+    bottom: -125%;
+  }
+}
+
+@media screen and (max-width: 1885px) {
+  .ag-glitch_item {
+    background-size: contain;
+    position: absolute;
+    top: -200%;
+    left: 3%;
+    right: 90%;
+    bottom: -125%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .row {
+    right: 0vh;
+    top: -750px;
+  }
+  .login-box {
+    top: 55%;
+    padding: 30px;
+    width: 350px;
+  }
+  .ag-glitch_item {
+    background: url("/img/Liox_Logo_white.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: -2%;
     left: 20%;
     right: 20%;
-    bottom: 20%;
+    bottom: 70%;
   }
 
+  h1 {
+    line-height: 1em;
+    font-size: 24px;
+  }
 }
 
-/* @media only screen and (max-width: 639px) {
-
-}
-
-@media only screen and (max-width: 479px) {
-
-}
-
-@media (min-width: 768px) and (max-width: 979px) {
-  .ag-format-container {
-    width: 750px;
+@media screen and (max-width: 360px) {
+  .ag-glitch_item {
+    top: -5%;
+    left: 20%;
+    right: 20%;
+    bottom: 70%;
   }
 
-}
-
-@media (min-width: 980px) and (max-width: 1161px) {
-  .ag-format-container {
-    width: 960px;
+  .login-box {
+    top: 60%;
   }
 
-} */
+  h1 {
+    line-height: 1em;
+    font-size: 24px;
+  }
+}

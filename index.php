@@ -57,24 +57,98 @@
       </ul>
     </div>
 
-    <p style="color: white;">Deliver your Content in a better Way. </p>
-
-    <div class="lx_News">
+    <div class="login-box">
+      <h1 class="blue-text">Deliver and monetize </h1>
+      <h1>your Video Content</h1>
+      <h1 class="blue-text">in a future-focused way.</h1>
+      <br>
+      <h4>We launch <span class="blue-text"> Early 2021 </span></h4>
+      <p class="">Get monthly Updates and News - no Spam!</p>
+      <br>
       <form>
-        <div class="inner-form">
-          <div class="input-field first-wrap">
-            <input id="email" type="email" placeholder="Get News & Updates - NO SPAM" />
-          </div>
-
-          <div class="input-field second-wrap">
-            <button class="btn" type="submit">GET IT!</button>
-          </div>
+        <div class="user-box">
+          <input type="text" name="email" required="">
+          <label>Enter your E-Mail</label>
         </div>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
       </form>
     </div>
 
+    <!-- <div class="screenshot2">
+      <div class="width1200px">
+        <img src="img/Liox Mediathek v2.png" alt="">
+      </div>
+    </div>
     <div class="screenshot">
-      <img src="img/Liox Mediathek v2.png" alt="">
+      <div class="width1200px">
+        <img src="img/Liox Mediathek v2.png" alt="">
+      </div>
+    </div> -->
+
+
+    <div class="row">
+      <div class="column">
+        <div class="ItemCard">
+
+          <figure class="ItemCard__thumb">
+              <img src="img/Liox Mediathek v2.png" height="340" width="510" alt="">
+              <span class="shadow cover"></span>
+          </figure>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ItemCard">
+
+          <figure class="ItemCard__thumb">
+              <img src="img/Liox Mediathek v2.png" height="340" width="510" alt="">
+              <span class="shadow cover"></span>
+          </figure>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ItemCard">
+
+          <figure class="ItemCard__thumb">
+              <img src="img/Liox Mediathek v2.png" height="340" width="510" alt="">
+              <span class="shadow cover"></span>
+          </figure>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ItemCard">
+
+          <figure class="ItemCard__thumb">
+              <img src="img/Liox Mediathek v2.png" height="340" width="510" alt="">
+              <span class="shadow cover"></span>
+          </figure>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ItemCard">
+
+          <figure class="ItemCard__thumb">
+              <img src="img/Liox Mediathek v2.png" height="340" width="510" alt="">
+              <span class="shadow cover"></span>
+          </figure>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ItemCard">
+
+          <figure class="ItemCard__thumb">
+              <img src="img/Liox Mediathek v2.png" height="340" width="510" alt="">
+              <span class="shadow cover"></span>
+          </figure>
+        </div>
+      </div>
+
+
     </div>
 
   <!-- Container End -->
