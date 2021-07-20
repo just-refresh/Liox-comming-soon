@@ -62,7 +62,7 @@
       <h1>your Video Content</h1>
       <h1 class="blue-text">in a future-focused way.</h1>
       <br>
-      <h4>We launch <span class="blue-text"> Early 2021 </span></h4>
+      <h4>We launch <span class="blue-text"> Early 2022 </span></h4>
       <p class="">Get monthly Updates and News - no Spam!</p>
       <br>
       <form>
