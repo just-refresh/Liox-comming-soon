@@ -89,40 +89,10 @@
     </div>
 
     <div class="login-box">
-      <!-- <h1 class="blue-text">Deliver and monetize </h1>
-      <h1>your Video Content</h1>
-      <h1 class="blue-text">in a future-focused way.</h1>
-      <br>
-      <h4>We launch <span class="blue-text"> Early 2022 </span></h4>
-      <p class="">Get monthly Updates and News - no Spam!</p>
-      <br>
-      <form>
-        <div class="user-box">
-          <input type="text" name="email" required="">
-          <label>Enter your E-Mail</label>
-        </div>
-        <a href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Submit
-        </a>
-      </form> -->
+
       <div style="text-align: left" class="sender-form-field" data-sender-form-id="ks5u73csbd8y6b2xl13"></div>
 
     </div>
-
-    <!-- <div class="screenshot2">
-      <div class="width1200px">
-        <img src="img/Liox Mediathek v2.png" alt="">
-      </div>
-    </div>
-    <div class="screenshot">
-      <div class="width1200px">
-        <img src="img/Liox Mediathek v2.png" alt="">
-      </div>
-    </div> -->
 
 
     <div class="row">
@@ -186,10 +156,8 @@
 
   <!-- Container End -->
 
-  <!-- Link zum jQuery JS -->
-  <!-- <script type="text/javascript" src="/js/jQuery.min.js"></script> -->
   <script type="text/javascript" src="/js/main.js"></script>
-  <!-- Link zum TweenMax JS -->
+
 
  </body>
 </html>
